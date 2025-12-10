@@ -11,7 +11,7 @@ int main()
     gets(S.buf);
 
     printf("Hello %s!\n", S.buf);
-    printf("S.x[0] = %02x\n", S.x[0]);
+    printf("S.x[0] = %c\n", S.x[0]);
 
     return 0;
 }
