@@ -11,13 +11,13 @@ int main()
     S.x[0] = 'x';
     S.x[1] = 'x'; 
 
-    printf("S.x = %c%c\n", S.x[0], S.x[1]);
+    printf("S.x = %s\n", S.x);
 
     printf("Please enter your name: ");
     gets(S.buf);
 
     printf("Hello %s!\n", S.buf);
-    printf("S.x = %c%c\n", S.x[0], S.x[1]);
+    printf("S.x = %s\n", S.x);
 
     return 0;
 }
