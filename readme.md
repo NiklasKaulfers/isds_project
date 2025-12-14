@@ -16,11 +16,18 @@ docker run --rm -it project_itsd /bin/bash
 [setup](./setup.md)
 ## Execute the file
 in __./src__ directory
+```shell
+cd src
+```
 run this to execute the program stack overflow
 ```shell
-sh run-buffer-overflow.sh
+sh run-stack-overflow.sh
 ```
 run this to execute the program for heap overflow
 ```shell
 sh run-heap-overflow.sh
 ```
+run this to execute the program that can cause a stack overflow due to recursion
+```shell
+sh run-stack-overflow-crashing.sh
+``` 
