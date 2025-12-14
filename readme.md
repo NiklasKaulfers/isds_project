@@ -14,7 +14,7 @@ docker run --rm -it project_itsd /bin/bash
 ### No gcc/clang compiler?
 [setup](./setup.md)
 ## Execute the file
-in src directory
+in __./src__ directory
 run this to execute the program stack overflow
 ```shell
 sh run-buffer-overflow.sh
