@@ -1,3 +1,2 @@
 src/out/*
-
-exercises/*.o
+src/*.o
