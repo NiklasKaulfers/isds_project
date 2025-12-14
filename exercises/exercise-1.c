@@ -3,14 +3,15 @@
 
 struct transaction
 {
-    char recipient[10];
-    char sender[10];
-    char recipientCreditCardNumber[16];
-    char senderCreditCardNumber[16];
+    char sender[11];
+    char recipient[11];
+    char senderCreditCardNumber[17];
+    char recipientCreditCardNumber[17];
 };
 
 int customCopy(char *input, char *destination) {
-    for (int i = 0; i < strlen(input); i++) {
+    size_t i;
+    for (i = 0; i < strlen(input); i++) {
         destination[i] = input[i];
     }
     return 0;
@@ -18,14 +19,15 @@ int customCopy(char *input, char *destination) {
 
 int main(int argc, char *argv[]) 
 {
-    char ourCreditCardNumber[16] = "1234567890123456";
-    char ourName[10] = "company-10";
+    char ourCreditCardNumber[17] = "1234567890123456\0";
+    char ourName[11] = "company-10\0";
 
     struct transaction T;
 
     customCopy(ourName, T.recipient);
     customCopy(ourCreditCardNumber, T.recipientCreditCardNumber);
 
+    printf("Welcome to the totally secure transaction system!\n");
 
     printf("Enter transaction details:\n");
     printf("Sender Name: ");
@@ -33,8 +35,6 @@ int main(int argc, char *argv[])
     printf("Sender Credit Card Number: ");
     gets(T.senderCreditCardNumber);
 
-    customCopy(ourName, T.recipient);
-    customCopy(ourCreditCardNumber, T.recipientCreditCardNumber);
     printf("Transaction details:\n");
     printf("Sender: %s\n", T.sender);
     printf("Sender Credit Card Number: %s\n", T.senderCreditCardNumber);
