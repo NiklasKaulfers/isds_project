@@ -11,3 +11,4 @@ sudo apt install build-essential
 
 windows
 [tutorial](https://code.visualstudio.com/docs/cpp/config-mingw)
+oder einfach mit [Docker](./readme.md)

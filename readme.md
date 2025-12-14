@@ -1,5 +1,6 @@
 # How to
 ## with Docker
+see [Docker docs](https://docs.docker.com/desktop/)
 in the root directory of this project
 ```shell
 docker build -t project_itsd .
