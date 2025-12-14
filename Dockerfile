@@ -14,6 +14,7 @@ WORKDIR /src
 
 # Copy the source files into the container
 COPY src /src
+COPY exercises /src/exercises
 
 # Set the default command to list the contents of the /src directory
 CMD ["ls", "-l"]
