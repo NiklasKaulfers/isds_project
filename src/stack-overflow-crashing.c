@@ -13,7 +13,7 @@ int main()
 {
     // example for a stack overflow with the stack fully overflowing causing an error
     
-    int length = 1000000000;
+    int length = 1000;
     int a[length];
     
 
