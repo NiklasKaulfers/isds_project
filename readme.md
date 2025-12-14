@@ -10,7 +10,7 @@ docker run --rm -it project_itsd /bin/bash
 ```
 
 
-## locally
+## without Docker
 ### No gcc/clang compiler?
 [setup](./setup.md)
 ## Execute the file
