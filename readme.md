@@ -1,4 +1,9 @@
 # How to
+## etwas funktioniert nicht?
+Die Funktion gets() ist nicht mehr unterstützt.  
+Um sie dennoch zu verwenden benötigen wir flags an gcc und ein weiteres package. Siehe [Dockerfile](./Dockerfile).
+- package: libc6-dev
+- flags: '-std=c99' oder '-std=gnu99'
 ## with Docker
 see [Docker docs](https://docs.docker.com/desktop/)
 in the root directory of this project
